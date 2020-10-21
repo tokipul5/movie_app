@@ -15,6 +15,7 @@ function Movie({ id, year, title, summary, poster, genres, rating }) {
             summary,
             poster,
             genres,
+            rating,
           },
         }}
       >
@@ -22,6 +23,7 @@ function Movie({ id, year, title, summary, poster, genres, rating }) {
         <div className="movie__data">
           <h3 className="movie__title">{title}</h3>
           <h5 className="movie__year">{year}</h5>
+          <h5 className="movie__rating">Raing: {rating}</h5>
           <ul className="movie__genres">
             {genres.map((genre, index) => (
               <li key={index} className="genres__genre">
